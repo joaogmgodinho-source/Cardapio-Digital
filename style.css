@@ -97,7 +97,7 @@ header {
 
 /* Quando o checkbox é marcado, abre o container da tabela */
 .trigger-menu:checked ~ .conteudo-tabela {
-  height: 2000px auto; /* Um valor alto o suficiente para caber a tabela */
+  max-height: 3000px; /* Um valor alto o suficiente para caber a tabela */
   padding: 15px;
   border-color: #ddd;
   overflow: visible;
