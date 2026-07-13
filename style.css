@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&display=swap');  
 
 body {
-    background-color: #f0efef;
+    background-color: #efeff0;
 }
 
 
@@ -139,3 +139,10 @@ footer {
   -webkit-overflow-scrolling: touch; /* Suavidade extrema no iPhone */
 }
 
+tbody tr:nth-child(even) {
+    background-color: #ddeafa;
+}
+
+th {
+    background-color: #ddeafa;
+}
