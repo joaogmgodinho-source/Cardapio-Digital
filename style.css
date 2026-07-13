@@ -97,9 +97,10 @@ header {
 
 /* Quando o checkbox é marcado, abre o container da tabela */
 .trigger-menu:checked ~ .conteudo-tabela {
-  max-height: 1500px; /* Um valor alto o suficiente para caber a tabela */
+  max-height: 2000px; /* Um valor alto o suficiente para caber a tabela */
   padding: 15px;
   border-color: #ddd;
+  overflow: visible;
 }
 
 /* Quando o checkbox é marcado, gira a setinha para cima */
@@ -130,5 +131,11 @@ footer {
     border: 2px solid #c5c5c5;
     text-align: center;
     margin-top: 325px;
+}
+
+.tabela-responsiva {
+  width: 100%;
+  overflow-x: auto; /* Cria uma rolagem lateral suave apenas dentro do menu */
+  -webkit-overflow-scrolling: touch; /* Suavidade extrema no iPhone */
 }
 
