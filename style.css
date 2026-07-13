@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&display=swap');  
+
+body {
+    background-color: #f0efef;
+}
+
+
+
+table {
+    border-collapse: collapse; /*remover o espaço entre as celulas*/
+    text-align: center;
+    margin-bottom: 125px;
+}
+
+table caption {
+    font-size: x-large;
+}
+
+th, td {
+    padding: 15px;
+}
+
+h1, h2, caption {
+    font-family: 'Barlow Condensed';
+    text-align: center;
+}
+
+tr, p {
+    font-family: 'Barlow';
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center; /*centraliza o conteudo*/
+    border: 2px solid #c5c5c5;
+    border-radius: 10px;
+}
+
+/* Container geral do menu */
+.menu-cardapio {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: sans-serif;
+}
+
+/* Esconde o checkbox real da tela */
+.trigger-menu {
+  display: none;
+}
+
+/* Estilo do botão/título que o usuário clica */
+.titulo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.titulo-menu:hover {
+  background-color: #444;
+}
+
+/* Ícone da seta que indica se está aberto ou fechado */
+.icone-seta {
+  transition: transform 0.3s ease;
+}
+
+/* Container da tabela (fechado por padrão com altura 0) */
+.conteudo-tabela {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s ease;
+  background-color: #f9f9f9;
+  border: 1px solid transparent;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+}
+
+/* ======= A MÁGICA DO CSS (Exibir ao Clicar) ======= */
+
+/* Quando o checkbox é marcado, abre o container da tabela */
+.trigger-menu:checked ~ .conteudo-tabela {
+  max-height: 1100px; /* Um valor alto o suficiente para caber a tabela */
+  padding: 15px;
+  border-color: #ddd;
+}
+
+/* Quando o checkbox é marcado, gira a setinha para cima */
+.trigger-menu:checked ~ .titulo-menu .icone-seta {
+  transform: rotate(180deg);
+}
+
+/* Ajuste básico para as tabelas ficarem responsivas dentro do menu */
+.conteudo-tabela table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+h2 {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid #c5c5c5;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid #c5c5c5;
+    text-align: center;
+    margin-top: 325px;
+}
+
